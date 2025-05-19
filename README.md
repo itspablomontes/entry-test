@@ -1,11 +1,11 @@
 # Thought Process
 
 
-- First I forked the repo and skimmed through the repository, analysed its folder structure and file division
+- First I forked the repo and skimmed through the repository, analyzed its folder structure and file division
 - I installed project dependencies
 - Then i ran the project dev server
 - I noticed the login page was just refreshing, just like the javascript native form behavior
-- I noticed the onLogin function wasnt being executed on submission
+- I noticed the onLogin function wasn't being executed on submission
 
 
 
@@ -13,7 +13,7 @@
 
 The App component was passing a handle login function that was going to "validate" the form data and authenticate the user, setting his status to logged in and redirecting to the welcome page. But by not using the prop the form was not executing this functionality, so I just added on the onSubmit form property.
 
-I also correct the fact that the formData wasnt being passed on the login function on the form, therefore not showing the user name on the welcome page.
+I also correct the fact that the formData wasn't being passed on the login function on the form, therefore not showing the user name on the welcome page.
 
 **Testing Stage**
 
