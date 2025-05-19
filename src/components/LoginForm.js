@@ -17,7 +17,7 @@ function LoginForm({ onLogin }) {
 
   return (
     <div className="login-form-container">
-      <form className="login-form" onSubmit={onLogin}>
+      <form className="login-form" onSubmit={() => onLogin(formData)}>
         <h2>Login</h2>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
