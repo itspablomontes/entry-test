@@ -17,12 +17,12 @@ I also correct the fact that the formData wasn't being passed on the login funct
 
 **Testing Stage**
 
-My cypress skills were kind of rusty so I asked Gemini AI to generate a cheatsheet of commands based on the official docs, I used the following prompt:
+My cypress skills were kind of rusty, so I asked Gemini AI to generate a cheat sheet of commands based on the official docs, I used the following prompt:
 
-``Create a cypress syntax cheatsheet based on the oficial documentation, be clear, concise, and explain each functionality using the feynman method.`
+``Create a cypress syntax cheat sheet based on the official documentation, be clear, concise, and explain each functionality using the Feynman method.`
 
 
 
 I then added a test for verifying the inputs, entering a user and password, verifying the existence of a welcome message if the right info, and that's it.
 
-I ended up running into a slow down because I forgot to use a e.preventDefault() in the login form, but I corrected afterwards.
+I ended up running into a slow-down because I forgot to use e.preventDefault() in the login form, but I corrected afterwards.
